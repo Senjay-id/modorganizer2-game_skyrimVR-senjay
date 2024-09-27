@@ -18,12 +18,14 @@ protected:
         "facegen",   "materials",     "skse",          "distantlod",
         "asi",       "Tools",         "MCM",           "distantland",
         "mits",      "dllplugins",    "CalienteTools", "NetScriptFramework",
-        "shadersfx", "Nemesis_Engine"};
+                              "shadersfx",
+                              "Nemesis_Engine",
+                              "ParticleLights"};
     return result;
   }
   virtual const FileNameSet& possibleFileExtensions() const override
   {
-    static FileNameSet result{"esp", "esm", "bsa", "modgroups", "ini"};
+    static FileNameSet result{"esp", "esm", "esl", "bsa", "modgroups", "ini"};
     return result;
   }
 };
